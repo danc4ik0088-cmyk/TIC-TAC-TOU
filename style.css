@@ -1,0 +1,78 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  color: #222;
+}
+
+header {
+  background: linear-gradient(90deg, #2193b0, #6dd5ed);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button {
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.board {
+  display: grid;
+  grid-template: repeat(3, 120px) / repeat(3, 120px);
+  gap: 5px;
+  background: #333;
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.cell {
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.cell:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+}
+
+.footer {
+  background: linear-gradient(90deg, #11998e, #38ef7d);
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer span {
+  margin-left: 10px;
+  background: rgba(255,255,255,0.2);
+  padding: 4px 10px;
+  border-radius: 5px;
+}
