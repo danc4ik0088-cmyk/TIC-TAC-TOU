@@ -14,7 +14,7 @@ function makeMove(cell, index) {
 
   if (checkWin()) {
     setTimeout(() => {
-      alert(Гравець ${currentPlayer} переміг!);
+      alert('Гравець ${currentPlayer} переміг!");
       resetGame();
     }, 100);
     return;
@@ -55,7 +55,7 @@ function doMove(index, symbol) {
 
   if (checkWin()) {
     setTimeout(() => {
-      alert(Гравець ${symbol} переміг!);
+      alert('Гравець ${symbol} переміг!");
       resetGame();
     }, 100);
   }
@@ -98,3 +98,4 @@ function checkWin() {
     );
   });
 }
+
